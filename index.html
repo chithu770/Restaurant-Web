@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Authentic & Exclusive</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            orange: '#F47920',
+                            blue: '#003473',
+                            green: '#018C45',
+                            light: '#f8f9fa'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- Announcement Bar -->
+    <div class="bg-brand-orange text-white text-sm py-2 px-4 text-center">
+        <p class="font-medium tracking-wide">House Of Exclusive Sweets & Snacks | High Class Vegetarian Restaurant</p>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="#" class="text-3xl font-serif font-bold text-brand-blue flex items-center gap-2">
+                    <i class="fa-solid fa-utensils text-brand-orange"></i>
+                    Gourmet Haven
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex space-x-8 items-center">
+                    <a href="#about" class="text-gray-600 hover:text-brand-orange font-medium transition">Brand Story</a>
+                    <a href="#services" class="text-gray-600 hover:text-brand-orange font-medium transition">Our Services</a>
+                    <a href="#locations" class="text-gray-600 hover:text-brand-orange font-medium transition">Locations</a>
+                    <a href="#contact" class="text-gray-600 hover:text-brand-orange font-medium transition">Contact Us</a>
+                    <a href="#order" class="bg-brand-blue text-white px-6 py-2 rounded-full font-bold hover:bg-blue-800 transition shadow-lg transform hover:-translate-y-0.5">
+                        Order Online
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-600 hover:text-brand-orange focus:outline-none text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100">
+            <div class="flex flex-col px-4 pt-2 pb-6 space-y-3">
+                <a href="#about" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-brand-orange rounded-md">Brand Story</a>
+                <a href="#services" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-brand-orange rounded-md">Our Services</a>
+                <a href="#locations" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-brand-orange rounded-md">Locations</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-600 hover:bg-gray-50 hover:text-brand-orange rounded-md">Contact Us</a>
+                <a href="#order" class="block px-3 py-2 text-center bg-brand-blue text-white rounded-md font-bold mt-2">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 h-[60vh] md:h-[80vh] flex items-center justify-center">
+        <!-- Hero Background Image (Unsplash) -->
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Restaurant Interior" class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-4 leading-tight drop-shadow-lg">
+                Gourmet Haven
+                <span class="block text-2xl md:text-3xl text-brand-orange mt-2 font-light">House of exclusive Delicacies</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-light">
+                Everything that we bring you is pure, delicious and authentic. Experience a perfect blend of timeless tradition and innovation in every bite.
+            </p>
+            <a href="#services" class="inline-block bg-brand-orange text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                Discover More
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-brand-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <p class="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2">What We Offer</p>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-blue">Our Specialties</h2>
+                <div class="w-24 h-1 bg-brand-orange mx-auto mt-4 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Indian Sweets" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-bold text-white">Exclusive Sweets</h3>
+                    </div>
+                    <div class="p-6 text-center">
+                        <p class="text-gray-600 mb-6 line-clamp-3">
+                            Explore our wide range of sweets, from timeless classics to our innovative creations, perfect for every occasion. Taste the love and passion in every bite.
+                        </p>
+                        <a href="#" class="inline-block border-2 border-brand-orange text-brand-orange px-6 py-2 rounded-full font-bold hover:bg-brand-orange hover:text-white transition">READ MORE</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Vegetarian Restaurant" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-bold text-white">Fine Dining</h3>
+                    </div>
+                    <div class="p-6 text-center">
+                        <p class="text-gray-600 mb-6 line-clamp-3">
+                            We have everything you would expect for a cosy meal time with your family. With an incredible menu covering the widest vegetarian fare across cuisines.
+                        </p>
+                        <a href="#" class="inline-block border-2 border-brand-orange text-brand-orange px-6 py-2 rounded-full font-bold hover:bg-brand-orange hover:text-white transition">READ MORE</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1626074964010-bfa99ca3fa06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Snacks and Savouries" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <h3 class="absolute bottom-4 left-6 text-2xl font-serif font-bold text-white">Savouries & Snacks</h3>
+                    </div>
+                    <div class="p-6 text-center">
+                        <p class="text-gray-600 mb-6 line-clamp-3">
+                            An extensive collection of packaged foods ranging from sweets, savouries, pickles, instant food mixes, found in shelves of every supermarket.
+                        </p>
+                        <a href="#" class="inline-block border-2 border-brand-orange text-brand-orange px-6 py-2 rounded-full font-bold hover:bg-brand-orange hover:text-white transition">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Hampers Section (Banner style) -->
+    <section class="py-16 bg-brand-blue text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center relative z-10">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Gift Hampers" class="rounded-xl shadow-2xl border-4 border-white/20 transform -rotate-2 hover:rotate-0 transition duration-500">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-2">Gift Hampers</h2>
+                <p class="text-xl font-light text-orange-300 mb-6">Gifts for every occasion</p>
+                <p class="mb-8 text-blue-100 text-lg leading-relaxed">
+                    Our wide selection of traditional sweets and savouries are the most perfect gifts you can give someone. Whether it's a personal gift for a festival or occasion, or a corporate hamper, you're sure to find the most suitable gift boxes for every budget and need.
+                </p>
+                <a href="#" class="inline-block bg-white text-brand-blue px-8 py-3 rounded-full font-bold hover:bg-brand-orange hover:text-white transition shadow-lg">DISCOVER MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-500 font-bold uppercase tracking-widest text-sm mb-2">A Step Above Excellence</p>
+            <h2 class="text-3xl font-serif font-bold text-brand-blue mb-12">Pure, Authentic & Sustainable</h2>
+            
+            <div class="flex flex-wrap justify-center gap-12 md:gap-24 opacity-80">
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-award text-5xl text-brand-orange mb-4"></i>
+                    <span class="font-bold text-gray-700">ISO Certified</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-leaf text-5xl text-brand-green mb-4"></i>
+                    <span class="font-bold text-gray-700">100% Vegetarian</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa-solid fa-recycle text-5xl text-brand-blue mb-4"></i>
+                    <span class="font-bold text-gray-700">Eco Friendly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-brand-light">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <p class="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2">About Us</p>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-blue mb-8">A tradition of authentic taste</h2>
+            <p class="text-lg text-gray-600 mb-10 leading-relaxed font-light">
+                Our beloved founder was a person of remarkable discipline, hard work, and indomitable will. Throughout life, they battled hardships, but were unfazed by them. Holding onto a singular belief that "hard work eventually pays." That belief is now what we call Gourmet Haven.
+            </p>
+            <a href="#" class="inline-block border-2 border-brand-blue text-brand-blue px-8 py-3 rounded-full font-bold hover:bg-brand-blue hover:text-white transition">READ OUR STORY</a>
+        </div>
+    </section>
+
+    <!-- Digital Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gray-50 rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center shadow-xl border border-gray-100">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-blue mb-4">Gourmet Haven Goes Digital</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Discover a world of authentic, traditional flavours from where you are. Visit our online store to order your favourite sweets, savouries and desserts directly to your doorstep.
+                    </p>
+                    <a href="#" class="inline-block bg-brand-orange text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-lg">ORDER ONLINE NOW</a>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <!-- Decorative image of app/food -->
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Food Delivery" class="rounded-2xl shadow-2xl z-10 relative">
+                    <div class="absolute -bottom-6 -left-6 bg-brand-blue text-white p-6 rounded-xl shadow-xl z-20 hidden md:block">
+                        <i class="fa-solid fa-motorcycle text-4xl mb-2"></i>
+                        <p class="font-bold text-xl">Fast Delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-brand-orange">
+        <div class="container mx-auto px-4">
+            
+            <!-- Newsletter -->
+            <div class="flex flex-col md:flex-row justify-between items-center pb-12 border-b border-gray-800 mb-12">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <h3 class="text-2xl font-serif font-bold mb-2">Stay connected!</h3>
+                    <p class="text-gray-400">Sign-up for our newsletter for offers and updates.</p>
+                </div>
+                <div class="w-full md:w-auto">
+                    <form class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Enter Email Address" class="px-4 py-3 rounded-md md:w-72 text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-orange">
+                        <button type="button" class="bg-brand-orange text-white px-6 py-3 rounded-md font-bold hover:bg-orange-600 transition">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-orange uppercase tracking-wider">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sweets</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Savouries</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Restaurant</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Retail</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-orange uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Brand Story</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Gifting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-orange uppercase tracking-wider">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Address -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-orange uppercase tracking-wider">Address</h4>
+                    <address class="not-italic text-gray-400 mb-4 space-y-2">
+                        <p>No: 123, Culinary Street, Food District,</p>
+                        <p>Downtown Metro - 10001</p>
+                    </address>
+                    <div class="space-y-2 text-gray-400">
+                        <p><strong class="text-white">Phone:</strong> <a href="tel:+1234567890" class="hover:text-brand-orange transition">+1 (234) 567-890</a></p>
+                        <p><strong class="text-white">Email:</strong> <a href="mailto:care@gourmethaven.com" class="hover:text-brand-orange transition">care@gourmethaven.com</a></p>
+                        <p><strong class="text-white">Timing:</strong> Mon-Sun, 7:00 AM to 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-500 text-sm">Copyright &copy; 2026 Gourmet Haven. All rights reserved.</p>
+                </div>
+                
+                <!-- Social Icons -->
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-orange hover:text-white transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-orange hover:text-white transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-orange hover:text-white transition">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-brand-orange hover:text-white transition">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
